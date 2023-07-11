@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center rounded-2 flex-column"
+    >
+      <h1 class="text-center my-5">Quote of the Day</h1>
+      <p class="my-3 text-dark font-monospace text-center">
+        Press the button below to recieve a random quote!
+      </p>
+      <button
+        class="btn btn-primary text-center my-3 h-100"
+        onclick="generate()"
+      >
+        New Quote
+      </button>
+      <div class="cont text-center">
+        <div class="text-center my-5" id="quote"></div>
+        <span id="author" class="text-center mt-1 mb-3"></span>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

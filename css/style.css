@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Caprasimo", cursive;
+  font-size: 60px;
+  color: #000;
+  width: fit-content;
+  letter-spacing: 4px;
+}
+p {
+  font-size: 35px;
+}
+button {
+  width: 200px;
+  padding: 20px !important;
+}
+#quote,
+#author {
+  font-size: 35px;
+  font-family: monospace;
+  font-weight: 600;
+}
+.cont {
+  opacity: 0;
+}
+.test {
+  opacity: 1;
+  position: relative;
+  right: 0;
+  animation-name: anim2;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.test2 {
+  opacity: 1;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    right: 200%;
+  }
+  to {
+    right: 0;
+  }
+}
